@@ -4,16 +4,13 @@
 
 package tetris;
 
-import net.orfjackal.nestedjunit.NestedJUnit;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
 
 /**
  * @author Esko Luontola
  */
-@Ignore("contains no test")
-@RunWith(NestedJUnit.class)
-public class Step4_FallingPiecesTest extends Assert {
+@Disabled("contains no test")
+public class Step4_FallingPiecesTest {
 
     // Step 4: Safe steps
     // - Remove the @Ignore annotation from this class
@@ -23,7 +20,7 @@ public class Step4_FallingPiecesTest extends Assert {
 /*
     private final Board board = new Board(6, 8);
 
-
+    @Nested
     public class When_a_piece_is_dropped {
 
         @Before

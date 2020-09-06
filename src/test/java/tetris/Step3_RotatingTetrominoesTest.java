@@ -4,16 +4,13 @@
 
 package tetris;
 
-import net.orfjackal.nestedjunit.NestedJUnit;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
 
 /**
  * @author Esko Luontola
  */
-@Ignore("contains no test")
-@RunWith(NestedJUnit.class)
-public class Step3_RotatingTetrominoesTest extends Assert {
+@Disabled("contains no test")
+public class Step3_RotatingTetrominoesTest {
 
     // Step 3: The actual rotation algorithms
     // - Remove the @Ignore annotation from this class

@@ -4,16 +4,13 @@
 
 package tetris;
 
-import net.orfjackal.nestedjunit.NestedJUnit;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
 
 /**
  * @author Esko Luontola
  */
-@Ignore("contains no test")
-@RunWith(NestedJUnit.class)
-public class Step2_RotatingPiecesOfBlocksTest extends Assert {
+@Disabled("contains no test")
+public class Step2_RotatingPiecesOfBlocksTest {
 
     // Step 2: Stepping stone for rotation algorithms
     // - Remove the @Ignore annotation from this class
@@ -23,10 +20,10 @@ public class Step2_RotatingPiecesOfBlocksTest extends Assert {
 /*
     private Piece piece;
 
-
+    @Nested
     public class A_piece_of_3x3_blocks {
 
-        @Before
+        @BeforeEach
         public void createPiece() {
             piece = new Piece("" +
                     ".X.\n" +
@@ -63,9 +60,10 @@ public class Step2_RotatingPiecesOfBlocksTest extends Assert {
 */
 
 /*
+    @Nested
     public class A_piece_of_5x5_blocks {
 
-        @Before
+        @BeforeEach
         public void createPiece() {
             piece = new Piece("" +
                     "..XXX\n" +

@@ -4,15 +4,16 @@
 
 package tetris;
 
-import net.orfjackal.nestedjunit.NestedJUnit;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
+
 
 /**
  * @author Esko Luontola
  */
-@RunWith(NestedJUnit.class)
-public class Step1_FallingBlocksTest extends Assert {
+public class Step1_FallingBlocksTest {
 
     // Step 1: Starting small
     // - See the README for motivation
@@ -20,7 +21,7 @@ public class Step1_FallingBlocksTest extends Assert {
 
     private final Board board = new Board(3, 3);
 
-
+    @Nested
     public class A_new_board {
 
         @Test
@@ -38,6 +39,7 @@ public class Step1_FallingBlocksTest extends Assert {
     }
 
 /*
+    @Nested
     public class When_a_block_is_dropped {
 
         @Before
@@ -80,6 +82,7 @@ public class Step1_FallingBlocksTest extends Assert {
 */
 
 /*
+    @Nested
     public class When_a_block_reaches_the_bottom {
 
         @Before
@@ -111,6 +114,7 @@ public class Step1_FallingBlocksTest extends Assert {
 */
 
 /*
+    @Nested
     public class When_a_block_lands_on_another_block {
 
         @Before

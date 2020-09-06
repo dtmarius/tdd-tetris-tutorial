@@ -4,13 +4,11 @@
 
 package tetris;
 
-import net.orfjackal.nestedjunit.NestedJUnit;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
 
-@Ignore("contains no test")
-@RunWith(NestedJUnit.class)
-public class Step6_RotatingAFallingPieceTest extends Assert {
+
+@Disabled("contains no test")
+public class Step6_RotatingAFallingPieceTest {
 
     // Step 6: Training wheels off
     // - Remove the @Ignore annotation from this class
